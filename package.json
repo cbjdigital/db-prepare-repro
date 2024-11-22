@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.35",
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.4",
+    "@rails/actiontext": "^7.0.8-3",
+    "esbuild": "^0.20.2",
+    "sass": "^1.72.0",
+    "trix": "^2.1.1"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/shared/packages.scss:./app/assets/stylesheets/shared/packages.css --no-source-map --load-path=node_modules",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+  }
+}

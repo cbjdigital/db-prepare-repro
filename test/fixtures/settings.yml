@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  key: MyString
+  value_text: MyString
+  value_boolean: false
+  value_integer: 1
+
+two:
+  key: MyString
+  value_text: MyString
+  value_boolean: false
+  value_integer: 1
